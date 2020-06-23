@@ -1,4 +1,4 @@
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
  
   if (arr1.length !== arr2.length) {
     return `🚫🚫🚫 Assertion Failed: ${arr1} !== ${arr2}`;
@@ -13,7 +13,7 @@ const assertArraysEqual = function (arr1, arr2) {
 };
 
 
-const without = function (list, unwanted) {
+const without = function(list, unwanted) {
   let newList = list.filter(function(item) {
     return !unwanted.includes(item);
   });
