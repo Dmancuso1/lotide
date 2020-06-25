@@ -1,12 +1,13 @@
 // Implement assertObjectsEqual which will take in two objects and console.log an appropriate message to the console.
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🚫🚫🚫 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🚫🚫🚫 Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
+
 
 // -----------------------------------
 
@@ -55,24 +56,35 @@ const eqObjects = function(object1, object2) {
 };
 
 
+
+
+const assertObjectsEqual = function(actual, expected) {
+  // Implement me!
+  // const inspect = require('util').inspect; // <= add this line
+  // Implement assertObjectsEqual which will take in TWO OBJECTS and console.log an appropriate message to the console...
+
+  const inspect = require('util').inspect; // <= add this line
+
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+  } else {
+    console.log(`🚫🚫🚫 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+  }
+};
+
+
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 eqObjects(ab, ba); // => true
 
+// This doesn't work! need to apply it to eqObjs
+assertObjectsEqual(ab, ab);
+
+
+
 const abc = { a: "1", b: "2", c: "3" };
 eqObjects(ab, abc); // => false
 
-assertEqual(eqObjects(ab, ba), true);
-assertEqual(eqObjects(ab, abc), false);
+// assertEqual(eqObjects(ab, ba), true);
+// assertEqual(eqObjects(ab, abc), false);
 
-// --------------------------------
-
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-eqObjects(cd, dc); // => true
-
-const cd2 = { c: "1", d: ["2", 3, 4] };
-eqObjects(cd, cd2); // => false
-
-assertEqual(eqObjects(cd, dc), true);
-assertEqual(eqObjects(cd, cd2), false);
