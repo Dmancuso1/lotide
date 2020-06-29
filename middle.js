@@ -1,9 +1,8 @@
-const assertArraysEqual = require('./assertArraysEqual')
+// const assertArraysEqual = require('./assertArraysEqual')
 
 
-const mainArr = ['one', 'two', 'three', 'four'];
-let newArr = []
 const middle = function (main) {
+  let newArr = []
   if (main.length < 3) {
     return newArr;
   }
@@ -19,6 +18,6 @@ const middle = function (main) {
   }
 };
 
-console.log(middle(mainArr));
+module.exports = middle;
 
-console.log(assertArraysEqual(newArr, ['two', 'three'])); // => true (this will pass)
+// console.log(assertArraysEqual(middle(['one', 'two', 'three', 'four']), ['two', 'three'])); // => true (this will pass)
