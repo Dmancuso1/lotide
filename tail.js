@@ -1,21 +1,15 @@
 
-let newArr = [];
 
-const tail = function (tail) {
-  newArr = tail.slice(1);
-  return newArr;
-}
+// const assertEqual = require('./assertEqual')
 
-const assertEqual = function(actual, expected) {
-  console.assert((result[0] === expected[0]) && (result[1] === expected[1]), `🚫 ${actual} !== ${expected}`);
+const tail = function(tail) {
+  const last = tail[tail.length -1];
+  return last;
 };
 
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Labs"); 
 
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-// assertEqual(2, 5);
-// assertEqual("The", "the");
+module.exports = tail
+
