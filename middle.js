@@ -21,3 +21,4 @@ const middle = function (main) {
 module.exports = middle;
 
 // console.log(assertArraysEqual(middle(['one', 'two', 'three', 'four']), ['two', 'three'])); // => true (this will pass)
+
