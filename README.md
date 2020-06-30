@@ -32,13 +32,13 @@ The following functions are currently implemented:
   * `assertArraysEqual` : Asserts that two arrays are the same. (includes testing with mocha)
   * `assertEqual` : Checks that two values are the same. (includes testing with mocha)
   * `eqArrays` : Checks that two arrays are the same. (includes testing with mocha)
-  * `flatten` : Returns a two-dimensional array and outputs it into one.
-  * `assertObjectsEqual` : Asserts that two objects are the same
-  * `countLetter` : Counters letters in an array.
-  * `countOnly` : Returns how many times a name is in an array.
-  * `eqArrays` : checks that two arrays are the same.
+  * `flatten` : Returns a two-dimensional array and outputs it into one. (includes testing with mocha)
+  * `countOnly` : Returns how many times a name is in an array. (includes testing with mocha)
+  * `eqArrays` : checks that two arrays are the same. (includes testing with mocha)
   * `eqObjects` : chackes that two objects are the same.
   * `findKey` : finds the key of an Object.
   * `findKeyByValue` : Finds the key of an object by a given value.
   * `letterPositions` : counts how many times each letter appears in a word.
+  * `countLetter` : Counters letters in an array.
   * `map` : returns the first letter of each word in a sentence. 
+  * `assertObjectsEqual` : Asserts that two objects are the same

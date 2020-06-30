@@ -37,3 +37,6 @@ console.log(letterPositions(string))
 
 
 console.log(assertArraysEqual(letterPositions('hello').e, [1])); // => true (this will pass)
+
+
+module.exports = letterPositions;

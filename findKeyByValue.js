@@ -32,3 +32,6 @@ console.log(findKeyByValue(object, value));
 
 assertEqual(findKeyByValue(object, "Dane"), "name");
 assertEqual(findKeyByValue(object, "random value.."), undefined);
+
+
+module.exports = findKeyByValue;
