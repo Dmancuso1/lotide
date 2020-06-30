@@ -5,6 +5,7 @@ const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
 const flatten = require('./flatten');
+const countOnly = require('./countOnly');
 
 
 
@@ -17,6 +18,7 @@ module.exports = {
   assertEqual,
   eqArrays,
   flatten,
+  countOnly
 }
 
 // console.log(module)
