@@ -7,10 +7,10 @@
     "test": "test"
   },
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.3.6"
   },
   "devDependencies": {
-    "mocha": "^8.0.1"
+    "mocha": "^8.4.0"
   },
   "scripts": {
     "test": "mocha"
