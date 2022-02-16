@@ -11,22 +11,22 @@ const countOnly = require('./countOnly');
 // const findKeyByValue = require('./findKeyByValue');
 // const eqObjects = require('./eqObjects');
 
-console.log(head('hello'))
+// console.log(head('hello'))
 
 
 
-module.exports = {
-  head,
-  tail,
-  middle,
-  assertArraysEqual,
-  assertEqual,
-  eqArrays,
-  flatten,
-  countOnly,
-  // letterPositions
-  // findKeyByValue
-  // eqObjects
-}
+// module.exports = {
+//   head,
+//   tail,
+//   middle,
+//   assertArraysEqual,
+//   assertEqual,
+//   eqArrays,
+//   flatten,
+//   countOnly,
+//   // letterPositions
+//   // findKeyByValue
+//   // eqObjects
+// }
 
 //console.log(module)
