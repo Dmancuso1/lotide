@@ -11,6 +11,8 @@ const countOnly = require('./countOnly');
 // const findKeyByValue = require('./findKeyByValue');
 // const eqObjects = require('./eqObjects');
 
+console.log(head('hello'))
+
 
 
 module.exports = {
@@ -27,4 +29,4 @@ module.exports = {
   // eqObjects
 }
 
-// console.log(module)
+//console.log(module)
