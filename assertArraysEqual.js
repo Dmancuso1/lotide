@@ -12,7 +12,7 @@ const assertArraysEqual = function (arr1, arr2) {
   }
 };
 
-exports.assertArraysEqual = assertArraysEqual;
+module.exports = assertArraysEqual;
 
 // console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"])); // => true (this will pass)
 // console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3])); // => false (this will fail)
